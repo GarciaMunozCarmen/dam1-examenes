@@ -15,7 +15,7 @@ public class GeneradorContraseñas {
             int number = sc.nextInt();
             sc.nextLine();
             try {
-                password = name.substring(0, 4) + number + city.substring(city.length()-2, city.length());
+                password = name.substring(0, 4) + number + city.substring(city.length()-2);
             } catch (StringIndexOutOfBoundsException e) {
                 System.out.println("La ciudad o el nombre no son válidos");
             }
